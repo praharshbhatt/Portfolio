@@ -1,9 +1,3 @@
-/*--------------------- Copyright (c) 2018 -----------------------
-[Master Javascript]
-Project: Portfolio Responsive HTML Template
-Version: 1.0.0
-Assigned to: ThemeForest
--------------------------------------------------------------------*/
 (function ($) {
     "use strict";
 
@@ -249,8 +243,8 @@ Assigned to: ThemeForest
         $(".submitForm").on("click", function () {
             var _this = $(this);
             var targetForm = _this.closest('form');
-            var errroTarget = targetForm.find('.response');
-            var check = checkRequire(targetForm, errroTarget);
+            var errorTarget = targetForm.find('.response');
+            var check = checkRequire(targetForm, errorTarget);
             if (check == 0) {
                 var formDetail = new FormData(targetForm[0]);
                 formDetail.append('form_type', _this.attr('form-type'));
@@ -265,7 +259,7 @@ Assigned to: ThemeForest
                     if (resp == 1) {
                         targetForm.find('input').val('');
                         targetForm.find('textarea').val('');
-                        errroTarget.html('<p style="color:green;">Mail has been sent successfully.</p>');
+                        errorTarget.html('<p style="color:green;">Mail has been sent successfully.</p>');
                     } else {
                         errroTarget.html('<p style="color:red;">Something went wrong please try again latter.</p>');
                     }
