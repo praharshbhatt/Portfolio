@@ -373,11 +373,18 @@ input:focus, textarea:focus, select:focus, button:focus {
 	width:100px;
 }
 .prt_menu_wrapper a.prt_bottom{
-	bottom:45px;
-	left:0px;
-	right:0px;
-	width:150px;
+    bottom:45px;
+    left:0px;
+    right:0px;
+    width:150px;
 }
+
+.prt_menu_wrapper a.prt_bottom2{
+    bottom:45px;
+    left:75%;
+    width:150px;
+}
+
 .prt_menu_wrapper a.prt_left{
 	top:50%;
 	left:-15px;
