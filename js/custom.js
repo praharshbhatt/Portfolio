@@ -141,6 +141,7 @@
 
             fixedContentPos: false
         });
+        
 
         // Service Page Image Slides Js
         $('div.prt_img_click').on('click', function () {
